@@ -33,4 +33,4 @@ Define subtitles per language to support localized text for your game.
 🧩 Built on Unity UI
 Seamlessly integrated with Unity’s native audio clip inspector to maintain a familiar workflow.
 
-https://github.com/user-attachments/assets/f8cf5fa4-e990-4aed-9e58-7ff9b7e10f75
+https://github.com/user-attachments/assets/e2ee44dd-5e7e-49f1-a0d7-0fc710f8f599
