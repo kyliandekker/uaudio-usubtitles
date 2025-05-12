@@ -1,0 +1,358 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c902745f9f98e4c85fa0654f43f8f3, type: 3}
+  m_Name: VO_Infected_Chickens_01
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: fcc1ff7d56639d5408e1a3dbfed3bcb9, type: 3}
+  Dialogue:
+  - SamplePosition: 3969
+    Text:
+      English:
+        Text: 'Some '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'Sommige '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 11234
+    Text:
+      English:
+        Text: 'of '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'kippen '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 15674
+    Text:
+      English:
+        Text: 'your '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 20921
+    Text:
+      English:
+        Text: 'chickens '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 38883
+    Text:
+      English:
+        Text: 'are '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'zijn '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 44332
+    Text:
+      English:
+        Text: infected.
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: "ge\xEFnfecteerd."
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 76284
+    Text:
+      English:
+        Text: 'Perhaps '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 1
+      Nederlands:
+        Text: 'Misschien '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 1
+  - SamplePosition: 87925
+    Text:
+      English:
+        Text: 'it''d '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'is het '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 95392
+    Text:
+      English:
+        Text: 'be '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'een '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 99630
+    Text:
+      English:
+        Text: 'a '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 104070
+    Text:
+      English:
+        Text: 'good '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'goed '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 108914
+    Text:
+      English:
+        Text: 'idea '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'idee '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 122234
+    Text:
+      English:
+        Text: 'to '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'om ze '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 130105
+    Text:
+      English:
+        Text: 'cure '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'te genezen '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 136160
+    Text:
+      English:
+        Text: 'them '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 139994
+    Text:
+      English:
+        Text: 'with '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 'met '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 145847
+    Text:
+      English:
+        Text: 'some '
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: 
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 152910
+    Text:
+      English:
+        Text: medicine
+        Censored: 0
+        Color: {r: 0.6431373, g: 0.011764706, b: 0.011764706, a: 1}
+        UseColor: 1
+        Bold: 1
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: medicijnen
+        Censored: 0
+        Color: {r: 0.6431373, g: 0.011764706, b: 0.011764706, a: 1}
+        UseColor: 1
+        Bold: 1
+        Italic: 0
+        NewLine: 0
+  - SamplePosition: 155634
+    Text:
+      English:
+        Text: .
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
+      Nederlands:
+        Text: .
+        Censored: 0
+        Color: {r: 1, g: 1, b: 1, a: 1}
+        UseColor: 0
+        Bold: 0
+        Italic: 0
+        NewLine: 0
