@@ -18,6 +18,8 @@ To resolve this, I considered potential solutions, drawing inspiration from a pr
 
 ## Features
 
+This repository has an assets folder with the plugin code and an example clip with subtitles.
+
 🎯 Custom Editor Timeline
 Add subtitle markers directly to audio clips via a user-friendly timeline interface.
 
