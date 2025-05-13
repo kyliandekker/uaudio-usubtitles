@@ -54,7 +54,6 @@ namespace UAudio.USubtitles.Editor
         private float _zoom = Constants.ZOOM_MIN;
         // This is how much the user has scrolled in the waveform display.
         private Vector2 _scrollPos = Vector2.zero;
-        private string _text = string.Empty;
 
         public enum InteractionType
         {
@@ -314,18 +313,19 @@ namespace UAudio.USubtitles.Editor
             Rect previewRect = previewWindowRect;
             previewRect.height *= 0.15f;
 
+            float playheadMarkerPosition = _audioPlayer.WavePosition;
             if (AudioUtility.IsClipPlaying())
             {
-                float playheadMarkerPosition = _clip.Clip.samples / _clip.Clip.length * AudioUtility.GetClipPosition();
-                UpdateTextPreview(playheadMarkerPosition);
+                playheadMarkerPosition = ((float)_clip.Clip.samples) / _clip.Clip.length * AudioUtility.GetClipPosition();
             }
+            string text = UpdateTextPreview(playheadMarkerPosition);
             GUIStyle textStyle = new GUIStyle(GUI.skin.label)
             {
                 richText = true,
                 alignment = TextAnchor.MiddleCenter
             };
             EditorGUI.DrawRect(previewRect, new Color32(0, 0, 0, 155));
-            EditorGUI.LabelField(previewRect, new GUIContent(_text), textStyle);
+            EditorGUI.LabelField(previewRect, new GUIContent(text), textStyle);
 
             EditorGUILayout.Separator();
 
@@ -382,8 +382,6 @@ namespace UAudio.USubtitles.Editor
 
                             float startSample = _clip.Clip.samples / zoomedPreviewWindowRect.width * (_scrollPos.x + evt.mousePosition.x);
                             _audioPlayer.SetPosition(startSample);
-
-                            UpdateTextPreview(startSample);
 
                             evt.Use();
                         }
@@ -754,16 +752,43 @@ namespace UAudio.USubtitles.Editor
         }
 
         /// <summary>
-        /// This sets the preview string based on the position of the position of the start selection marker or the played audio.
+        /// This returns the preview string based on the position of the position of the start selection marker or the played audio.
         /// </summary>
         /// <param name="position"></param>
-        private void UpdateTextPreview(float position)
+        private string UpdateTextPreview(float position)
         {
             List<string> sentences = _clip.GetSentencesTillSamplePosition(_language, (uint)position);
             if (sentences.Count > 0)
             {
-                _text = sentences[^1];
+                return sentences[^1];
+            }
+            return "";
+        }
+
+        [MenuItem("Assets/Create/UAudioClip", priority = 1)]
+        private static void CreateUAudioClipFromAudioClip()
+        {
+            for (int i = 0; i < Selection.objects.Length; i++)
+            {
+                UnityEngine.Object obj = Selection.objects[i];
+
+                UAudioClip uaudioClip = ScriptableObject.CreateInstance<UAudioClip>();
+                uaudioClip.Clip = obj as AudioClip;
+                string path = AssetDatabase.GetAssetPath(obj);
+                int fileExtPos = path.LastIndexOf(".");
+                if (fileExtPos >= 0)
+                    path = path.Substring(0, fileExtPos);
+                string assetPathAndName = AssetDatabase.GenerateUniqueAssetPath(path + ".asset");
+
+                AssetDatabase.CreateAsset(uaudioClip, assetPathAndName);
+
+                AssetDatabase.SaveAssets();
+                AssetDatabase.Refresh();
+                EditorUtility.FocusProjectWindow();
             }
         }
+
+        [MenuItem("Assets/Create/UAudioClip", true)]
+        private static bool CreateUAudioClipFromAudioClipValidation() => Selection.activeObject is AudioClip;
     }
 }
